@@ -57,13 +57,13 @@ export const getProductsQuery = ({
       hasPreviousPage
     }
     edges {
-			 node {
+       node {
         id
         title
         handle
         totalInventory
-      	contextualPricing (context: {country: UA (UA/US/CA etc.)}) {
-				priceRange {
+        contextualPricing (context: {country: UA (UA/US/CA etc.)}) {
+        priceRange {
           minVariantPrice {
             amount
             currencyCode
@@ -72,7 +72,7 @@ export const getProductsQuery = ({
         }
         category {
           id
-					name
+          name
         }
       }
      }
